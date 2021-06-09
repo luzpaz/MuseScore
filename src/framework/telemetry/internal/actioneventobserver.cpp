@@ -109,7 +109,7 @@ bool ActionEventObserver::eventFilter(QObject* watched, QEvent* event)
 ///---------------------------------------------------------
 /// @name  setScoreState
 ///
-/// @brief Geting the current state of a score through the connection.
+/// @brief Getting the current state of a score through the connection.
 ///        Because single shortcut can be used in different actions regarding to the current score state.
 ///
 /// @see ActionEventObserver::eventFilter

@@ -39,7 +39,7 @@ SET "Qt_ARCHIVE=Qt5152_msvc2019_64.7z"
 
 IF %TARGET_PROCESSOR_BITS% == 32 (
     ::SET "Qt_ARCHIVE=qt599_msvc2015.7z"
-    ECHO "error: Not avalable Qt 32"
+    ECHO "error: Not available Qt 32"
     EXIT /b 1
 )
 

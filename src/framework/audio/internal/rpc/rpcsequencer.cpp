@@ -39,7 +39,7 @@ RpcSequencer::~RpcSequencer()
 
 void RpcSequencer::setup()
 {
-    //! NOTE It's not a very elegant solution - it's not good that we're recieving all messages here.
+    //! NOTE It's not a very elegant solution - it's not good that we're receiving all messages here.
     //! It would be possible to do as it was done before - to subscribe for a given target and, accordingly, receive messages here only for this target.
     //! But this means that the channel assumes part of the responsibility of the controller,
     //! does more than is required - it makes a mapping of the messages and targets.

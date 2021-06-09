@@ -125,7 +125,7 @@ private:
 ///   \brief Start an external program.\ Available in QML
 ///   as \p QProcess.
 ///   \details Using this will most probably result in the
-///   plugin to be platform dependant. \since MuseScore 3.2
+///   plugin to be platform dependent. \since MuseScore 3.2
 //---------------------------------------------------------
 
 class MsProcess : public QProcess

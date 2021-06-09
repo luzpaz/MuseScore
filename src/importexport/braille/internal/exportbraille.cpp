@@ -118,7 +118,7 @@
 #define BRAILLE_B_32ND_HALF             't'
 //16th and whole notes have the same representation in Braille.
 // Breve has the same representation, but with an extra suffix;
-// 256th has the same represantation, but with an extra prefix;
+// 256th has the same representation, but with an extra prefix;
 #define BRAILLE_C_16TH_WHOLE            'Y'
 #define BRAILLE_D_16TH_WHOLE            'Z'
 #define BRAILLE_E_16TH_WHOLE            '&'
@@ -1117,7 +1117,7 @@ QString ExportBraille::brailleMeasure(Measure* measure, int staffCount)
     for (int i = 1; i < VOICES; ++i) {
         if (measure->hasVoice(staffCount * VOICES + i)) {
             // 11.1.1. Page 87. Music Braille Code 2015.
-            // All voices must be complete when writting the other voices in Braille.
+            // All voices must be complete when writing the other voices in Braille.
             // We exchange the voices to voice 0 and back for MuseScore to add the missing beats as rests
             // Then we undo the change, so we don't have an altered score.
             // TODO: Braille dot 5 should be put before the rests that appear in Braille, but are not originally in the score
@@ -1292,7 +1292,7 @@ QString ExportBraille::brailleNote(QString pitchName, TDuration::DurationType du
 
         //16th and whole notes have the same representation in Braille.
         // Breve has the same representation, but with an extra suffix;
-        // 256th has the same represantation, but with an extra prefix;
+        // 256th has the same representation, but with an extra prefix;
         noteToBraille[TDuration::DurationType::V_256TH]["C"] = noteToBraille[TDuration::DurationType::V_16TH]["C"]
                                                                    =noteToBraille[TDuration::DurationType::V_WHOLE]["C"]
                                                                      = noteToBraille[TDuration::DurationType::V_BREVE]["C"]
@@ -2168,7 +2168,7 @@ QString ExportBraille::brailleVolta(Measure* measure, Volta* volta, int staffCou
     }
 
     // Note: Normally the separator is only added in certain
-    // conditions, but for simplicity we add it everytime
+    // conditions, but for simplicity we add it every time
     result += "'";
 
     return result;
@@ -2370,7 +2370,7 @@ QString ExportBraille::brailleHairpinBefore(ChordRest* chordRest, std::vector<Ha
     if (!chordRest) {
         return QString();
     }
-    //TODO we are supposed to use line continuation 1 and 2 if there are multiple lines overlaping
+    //TODO we are supposed to use line continuation 1 and 2 if there are multiple lines overlapping
     QString result = QString();
     for (Hairpin* hairpin : *hairpins) {
         if (!hairpin || hairpin->startCR() != chordRest) {
@@ -2417,7 +2417,7 @@ QString ExportBraille::brailleHairpinAfter(ChordRest* chordRest, std::vector<Hai
     if (!chordRest) {
         return QString();
     }
-    //TODO we are supposed to use line continuation 1 and 2 if there are multiple lines overlaping
+    //TODO we are supposed to use line continuation 1 and 2 if there are multiple lines overlapping
 
     // 23.3.3.C says end of  *may* be omitted in some specific cases,
     // but since it is not mandatory, we don't do it for simplicity.

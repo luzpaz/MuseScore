@@ -63,7 +63,7 @@ Column {
         ComboBoxWithTitle {
             id: outputDevicesBox
 
-            title: qsTrc("appshell", "MIDI ouput:")
+            title: qsTrc("appshell", "MIDI output:")
             titleWidth: root.firstColumnWidth
 
             onValueEdited: {

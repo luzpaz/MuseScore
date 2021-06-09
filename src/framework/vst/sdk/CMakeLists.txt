@@ -21,7 +21,7 @@
 set(MODULE vst_sdk_3)
 
 if (NOT VST3_SDK_PATH)
-    message(FATAL_ERROR "VST3_SDK path is not setted")
+    message(FATAL_ERROR "VST3_SDK path is not set")
 endif()
 
 include(GetPlatformInfo)

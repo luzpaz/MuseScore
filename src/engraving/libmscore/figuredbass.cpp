@@ -1134,7 +1134,7 @@ void FiguredBass::write(XmlWriter& xml) const
     if (ticks().isNotZero()) {
         xml.tag("ticks", ticks());
     }
-    // if unparseable items, write full text data
+    // if unparsable items, write full text data
     if (items.size() < 1) {
         TextBase::writeProperties(xml, true);
     } else {

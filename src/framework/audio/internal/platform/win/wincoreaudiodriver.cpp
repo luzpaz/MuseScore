@@ -183,7 +183,7 @@ void CoreAudioDriver::close()
         m_thread.join();
     }
     clean();
-    LOGI() << "Core Audio driver stoped";
+    LOGI() << "Core Audio driver stopped";
 }
 
 bool CoreAudioDriver::isOpened() const

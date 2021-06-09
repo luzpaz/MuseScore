@@ -304,7 +304,7 @@ bool Score::read(XmlReader& e)
         } else {
             defined = scoreOrders.findById(order->getId());
             if (defined) {
-                // The order in the score file is already available, resuse it.
+                // The order in the score file is already available, reuse it.
                 setScoreOrder(defined);
                 delete order;
             } else {

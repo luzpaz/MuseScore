@@ -292,7 +292,7 @@ void AlsaMidiInPort::doProcess()
 void AlsaMidiInPort::stop()
 {
     if (!m_thread) {
-        LOGW() << "already stoped";
+        LOGW() << "already stopped";
         return;
     }
 

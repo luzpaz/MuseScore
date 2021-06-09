@@ -1000,7 +1000,7 @@ int ScoreOrderList::size() const
 }
 
 //---------------------------------------------------------
-//   opeator[
+//   operator[]
 //---------------------------------------------------------
 
 ScoreOrder* ScoreOrderList::operator[](const int index) const

@@ -156,7 +156,7 @@ void ScorePropertiesDialog::newClicked()
 
     // scroll down to see the newly created tag.
     // ugly workaround because scrolling to maximum doesn't completely scroll
-    // to the maximum, for some unknow reason.
+    // to the maximum, for some unknown reason.
     // See https://www.qtcentre.org/threads/32852-How-can-I-always-keep-the-scroll-bar-at-the-bottom-of-a-QScrollArea
     QScrollBar* scrollBar = scrollArea->verticalScrollBar();
     scrollBar->setMaximum(scrollBar->maximum() + 1);

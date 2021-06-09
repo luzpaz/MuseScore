@@ -127,7 +127,7 @@
         <bottomGap>0</bottomGap>
         <Text>
           <style>Title</style>
-          <text>Titel</text>
+          <text>Title</text>
           </Text>
         <Text>
           <style>Composer</style>

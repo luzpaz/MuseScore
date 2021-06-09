@@ -204,7 +204,7 @@ void GridCanvas::paint(QPainter* painter)
     QPointF lastPoint(0, 0);
     pen = painter->pen();
     pen.setWidth(3);
-    pen.setColor(Qt::red);   // not theme dependant
+    pen.setColor(Qt::red);   // not theme dependent
     painter->setPen(pen);
     // draw line between points
     for (const Ms::PitchValue& v : m_points) {

@@ -204,7 +204,7 @@ void WinMidiInPort::stop()
     }
 
     if (!m_running) {
-        LOGW() << "already stoped";
+        LOGW() << "already stopped";
         return;
     }
 

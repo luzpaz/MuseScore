@@ -100,7 +100,7 @@ const RealizedHarmony::PitchMap RealizedHarmony::generateNotes(int rootTpc, int 
 
     PitchMap notes;
     int rootPitch = tpc2pitch(rootTpc) + transposeOffset;
-    //euclidian mod, we need to treat this new pitch as a pitch between
+    //euclidean mod, we need to treat this new pitch as a pitch between
     //0 and 11, so that voicing remains consistent across transposition
     if (rootPitch < 0) {
         rootPitch += PITCH_DELTA_OCTAVE;
@@ -489,7 +489,7 @@ RealizedHarmony::PitchMap RealizedHarmony::getIntervals(int rootTpc, bool litera
         if (!(omit & (1 << 2))) {
             ret.insert(2 + RANK_MULT * RANK_ADD, tpcInterval(rootTpc, 2, 0));               //maj2
         }
-        omit |= 1 << 9;           //make sure we don't add altered 9 when theres a 2
+        omit |= 1 << 9;           //make sure we don't add altered 9 when there's a 2
         break;
     case 69:
         ret.insert(9 + RANK_MULT * RANK_ADD, tpcInterval(rootTpc, 6, 0));             //maj6

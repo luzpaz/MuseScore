@@ -964,7 +964,7 @@ void Harmony::setHarmony(const QString& s)
         setBaseTpc(b);
         render();
     } else {
-        // unparseable chord, render as plain text
+        // unparsable chord, render as plain text
         for (const TextSegment* ts : qAsConst(textList)) {
             delete ts;
         }
